@@ -15,7 +15,7 @@ A FastAPI service that processes receipts and calculates points based on specifi
 
 ### Local Development
 
-# note that the defaults to port 80.
+- note that the port defaults to port 80
 ```bash
 # Install dependencies
 poetry install
