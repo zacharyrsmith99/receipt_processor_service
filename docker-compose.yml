@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  receipt_processor:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - RECEIPT_PROCESSOR_SERVICE_HOST=0.0.0.0
+    volumes:
+      - .:/app
+    restart: unless-stopped

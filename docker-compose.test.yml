@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  tests:
+    build: 
+      context: .
+      dockerfile: Dockerfile.test
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONPATH=/app
+      - RECEIPT_PROCESSOR_SERVICE_HOST=0.0.0.0
